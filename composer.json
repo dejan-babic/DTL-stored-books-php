@@ -1,0 +1,16 @@
+{
+  "name": "devtech/dtl",
+  "description": "Service for retrieving data from a mongodb database",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Dejan Babic",
+      "email": "dejan.babic@devtechgroup.com"
+    }
+  ],
+  "require": {
+    "symfony/yaml": "2.0.7",
+    "doctrine/mongodb-odm": "^1.0"
+  }
+}
