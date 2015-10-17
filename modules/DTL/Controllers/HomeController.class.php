@@ -4,10 +4,16 @@
 
 	class HomeController implements IController {
 
+		protected $dataManager;
+
+		public function __construct ($dc) {
+			$this->dataManager = $dc[DC_DTL_DOCUMENT_MANAGER_KEY];
+		}
+
 		public function index () {
-			$dm = new MongoDocumentManager();
-			$book = new Book('TEST', array('Dejan Babic'));
-			$dm->persist($book);
+			$b = new Book('final', array('DB'));
+			$dm = $this->dataManager;
+			$dm->persist($b);
 			$dm->flush();
 		}
 
@@ -30,4 +36,5 @@
 		public function update () {
 			// TODO: Implement update() method.
 		}
+
 	}

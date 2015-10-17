@@ -2,7 +2,7 @@
 
 	namespace DTL;
 
-	interface IFrontController {
+	interface IApiController {
 		public function setController($controller);
 		public function setAction($action);
 		public function setParams(array $params);

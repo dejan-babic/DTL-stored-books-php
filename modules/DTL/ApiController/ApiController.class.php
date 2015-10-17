@@ -5,7 +5,7 @@
 	use InvalidArgumentException;
 	use ReflectionClass;
 
-	class FrontController implements IFrontController {
+	class ApiController implements IApiController {
 
 		const DEFAULT_CONTROLLER = __NAMESPACE__."\\"."HomeController";
 		const DEFAULT_ACTION     = "index";
@@ -14,22 +14,10 @@
 		protected $action        = self::DEFAULT_ACTION;
 		protected $params        = array();
 		protected $basePath      = "/";
+		protected $dc;
 
-		public function __construct(array $options = array()) {
-			if (empty($options)) {
-				$this->parseUri();
-			}
-			else {
-				if (isset($options["controller"])) {
-					$this->setController($options["controller"]);
-				}
-				if (isset($options["action"])) {
-					$this->setAction($options["action"]);
-				}
-				if (isset($options["params"])) {
-					$this->setParams($options["params"]);
-				}
-			}
+		public function __construct($dc = null, array $options = array()) {
+			$this->dc = $dc;
 		}
 
 		protected function parseUri() {
@@ -78,6 +66,6 @@
 		}
 
 		public function run () {
-			call_user_func_array(array(new $this->controller, $this->action), $this->params);
+			call_user_func_array(array(new $this->controller($this->dc), $this->action), array($this->params));
 		}
 	}

@@ -33,8 +33,7 @@
 		private $link;
 
 		/**
-		 * Book constructor.
-		 * @param $id
+		 * Book constructor
 		 * @param $title
 		 * @param array $authors
 		 */

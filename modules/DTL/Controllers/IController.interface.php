@@ -3,6 +3,7 @@
 	namespace DTL;
 
 	interface IController {
+		public function __construct($dc);
 		public function index();
 		public function help();
 		public function all();
