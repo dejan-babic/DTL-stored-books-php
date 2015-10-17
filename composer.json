@@ -11,6 +11,8 @@
   ],
   "require": {
     "symfony/yaml": "2.0.7",
-    "doctrine/mongodb-odm": "^1.0"
+    "doctrine/mongodb-odm": "^1.0",
+    "pimple/pimple": "^3.0",
+    "geraintluff/jsv4": "^1.0"
   }
 }

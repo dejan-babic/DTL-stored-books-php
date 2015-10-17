@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "08dcf26c5e40a010adc5b4d40601c228",
-    "content-hash": "a933e2372cca4c61a482cea6d15753a8",
+    "hash": "606af9928c0f8fdd04556f16cdf5ebbf",
+    "content-hash": "c47c885db4293993c1ae1a08f086d720",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -612,6 +612,95 @@
             "time": "2015-08-31 14:34:50"
         },
         {
+            "name": "geraintluff/jsv4",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/geraintluff/jsv4-php.git",
+                "reference": "1d4306d39030aa288979d6822070777e4034722e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/geraintluff/jsv4-php/zipball/1d4306d39030aa288979d6822070777e4034722e",
+                "reference": "1d4306d39030aa288979d6822070777e4034722e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "jsv4.php",
+                    "schema-store.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Geraint Luff",
+                    "email": "luffgd@gmail.com"
+                }
+            ],
+            "description": "A (coercive) JSON Schema v4 Validator for PHP",
+            "keywords": [
+                "Geraint Luff",
+                "JSON Schema",
+                "geraintluff",
+                "json",
+                "schema",
+                "v4",
+                "validator"
+            ],
+            "time": "2014-10-07 13:36:26"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pimple, a simple Dependency Injection Container",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2015-09-11 15:10:35"
+        },
+        {
             "name": "symfony/console",
             "version": "v2.7.5",
             "source": {
@@ -692,7 +781,7 @@
                     "Symfony\\Component\\Yaml": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
