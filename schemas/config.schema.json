@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "autoloader": {
+      "id": "http://jsonschema.net/autoloader",
+      "type": "object",
+      "properties": {
+        "paths": {
+          "id": "http://jsonschema.net/autoloader/paths",
+          "type": "array",
+          "items": {
+            "id": "http://jsonschema.net/autoloader/paths/0",
+            "type": "string"
+          },
+          "required": [
+            "0"
+          ]
+        },
+        "components": {
+          "id": "http://jsonschema.net/autoloader/components",
+          "type": "array",
+          "items": {
+            "id": "http://jsonschema.net/autoloader/components/3",
+            "type": "string"
+          }
+        },
+        "extensions": {
+          "id": "http://jsonschema.net/autoloader/extensions",
+          "type": "array",
+          "items": {
+            "id": "http://jsonschema.net/autoloader/extensions/2",
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "paths",
+        "components",
+        "extensions"
+      ]
+    },
+    "mongodb": {
+      "id": "http://jsonschema.net/mongodb",
+      "type": "object",
+      "properties": {
+        "username": {
+          "id": "http://jsonschema.net/mongodb/username",
+          "type": "string"
+        },
+        "password": {
+          "id": "http://jsonschema.net/mongodb/password",
+          "type": "string"
+        },
+        "host": {
+          "id": "http://jsonschema.net/mongodb/host",
+          "type": "string"
+        },
+        "port": {
+          "id": "http://jsonschema.net/mongodb/port",
+          "type": "integer"
+        },
+        "database": {
+          "id": "http://jsonschema.net/mongodb/database",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "autoloader",
+    "mongodb"
+  ]
+}

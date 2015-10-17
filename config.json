@@ -1,0 +1,14 @@
+{
+  "autoloader": {
+    "paths": ["modules/DTL"],
+    "components": ["Models", "Controllers", "ApiController", "DataConnection", "DocumentManager"],
+    "extensions": [".php", ".class.php", ".interface.php"]
+  },
+  "mongodb": {
+    "username": "devtech",
+    "password": "devtech",
+    "host": "ds033734.mongolab.com",
+    "port": 33734,
+    "database": "dtl-stored-books"
+  }
+}
